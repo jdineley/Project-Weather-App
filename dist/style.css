@@ -35,13 +35,8 @@ main {
 }
 
 .settings > div {
-  /* width: 150px; */
   margin: 10px auto;
   padding: 10px;
-  /* background-color: white; */
-  /* border: 1px solid black; */
-  /* background-color: red;
-  border-radius: 4px; */
 }
 
 #select-units-title {
