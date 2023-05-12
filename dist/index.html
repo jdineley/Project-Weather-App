@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Project-Weather-App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather Forcast App</h1>
+    </header>
+    <main>
+      <div id="inputs">
+        <div class="settings">
+          <!-- <h3 id="select-units-title">Select desired units</h3> -->
+          <div class="temp-unit-select">
+            <div>
+              <input
+                class="selector"
+                type="checkbox"
+                name="celcius"
+                id="°C"
+                checked
+              />
+              <label class="selector" for="°C">Celcius</label>
+            </div>
+            <div>
+              <input
+                class="selector"
+                type="checkbox"
+                name="fahrenheit"
+                id="°F"
+              />
+              <label class="selector" for="°F">Fahrenheit</label>
+            </div>
+          </div>
+          <div class="speed-unit-select">
+            <div>
+              <input
+                class="selector"
+                type="checkbox"
+                name="mph"
+                id="mph"
+                checked
+              />
+              <label class="selector" for="mph">mph</label>
+            </div>
+            <div>
+              <input class="selector" type="checkbox" name="kph" id="kph" />
+              <label class="selector" for="kph">kph</label>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <input type="text" id="city" placeholder="enter city name" />
+          <button type="submit" id="search-button">Search</button>
+        </div>
+      </div>
+
+      <div class="search-result">
+        <h3 id="city-name"></h3>
+        <p id="temperature"></p>
+        <p id="feels-like"></p>
+        <p id="wind-speed"></p>
+        <p id="gust-speed"></p>
+      </div>
+    </main>
+  </body>
+</html>
